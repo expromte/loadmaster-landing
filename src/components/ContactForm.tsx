@@ -32,8 +32,8 @@ export const ContactForm = () => {
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <Phone className="w-6 h-6 text-primary" />
-                <a href="tel:+7xxxxxxxxxx" className="text-lg hover:text-primary">
-                  +7 (XXX) XXX-XX-XX
+                <a href="tel:+79127452008" className="text-lg hover:text-primary">
+                  +7 (912) 745-20-08
                 </a>
               </div>
               
@@ -86,7 +86,7 @@ export const ContactForm = () => {
             
             <button
               type="submit"
-              className="w-full px-8 py-4 rounded-lg bg-primary text-black font-semibold text-lg transition-all hover:bg-primary/90"
+              className="w-full px-8 py-4 rounded-lg bg-primary text-white font-semibold text-lg transition-all hover:bg-primary/90"
             >
               Получить консультацию
             </button>

@@ -1,5 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import { Phone, MessageSquare } from "lucide-react";
 
 export const Pricing = () => {
   return (
@@ -33,6 +34,37 @@ export const Pricing = () => {
               </div>
             </CardContent>
           </Card>
+          
+          <div className="mt-12 text-center space-y-8">
+            <div className="flex items-center justify-center space-x-2">
+              <Phone className="w-6 h-6 text-primary" />
+              <p className="text-xl">
+                Звоните для заказа{" "}
+                <a href="tel:+79127452008" className="font-bold hover:text-primary">
+                  +7 (912) 745-20-08
+                </a>{" "}
+                <span className="text-gray-500">(с 09 до 17 ч)</span>
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center space-x-4">
+              <a
+                href="https://t.me/+79127452008"
+                className="inline-flex items-center space-x-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                <MessageSquare className="w-5 h-5" />
+                <span>Telegram</span>
+              </a>
+              
+              <a
+                href="https://wa.me/79127452008"
+                className="inline-flex items-center space-x-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                <MessageSquare className="w-5 h-5" />
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import { Process } from "@/components/Process";
 import { ContactForm } from "@/components/ContactForm";
 import { CompletedProjects } from "@/components/CompletedProjects";
 import { Pricing } from "@/components/Pricing";
+import { FloatingButton } from "@/components/FloatingButton";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Pricing />
       <Process />
       <ContactForm />
+      <FloatingButton />
     </main>
   );
 };
