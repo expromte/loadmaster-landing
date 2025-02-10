@@ -6,7 +6,8 @@ export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    comment: "",
+    work: "",
+    address: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -53,7 +54,7 @@ export const ContactForm = () => {
           
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium mb-2">Имя</label>
+              <label className="block text-sm font-medium mb-2">Как вас зовут?</label>
               <input
                 type="text"
                 required
@@ -64,7 +65,7 @@ export const ContactForm = () => {
             </div>
             
             <div>
-              <label className="block text-sm font-medium mb-2">Телефон</label>
+              <label className="block text-sm font-medium mb-2">Контактный телефон</label>
               <input
                 type="tel"
                 required
@@ -75,12 +76,23 @@ export const ContactForm = () => {
             </div>
             
             <div>
-              <label className="block text-sm font-medium mb-2">Комментарий</label>
+              <label className="block text-sm font-medium mb-2">Какие работы требуются?</label>
               <textarea
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
                 rows={4}
-                value={formData.comment}
-                onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
+                value={formData.work}
+                onChange={(e) => setFormData({ ...formData, work: e.target.value })}
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-2">Адрес работ</label>
+              <input
+                type="text"
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                value={formData.address}
+                onChange={(e) => setFormData({ ...formData, address: e.target.value })}
               />
             </div>
             
