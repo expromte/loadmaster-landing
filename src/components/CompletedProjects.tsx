@@ -24,14 +24,7 @@ export const CompletedProjects = () => {
   return (
     <section className="py-24 bg-white">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Выполненные проекты</h2>
-          <div className="flex items-center justify-center gap-2 text-2xl font-semibold text-primary mb-8">
-            <span>Стоимость аренды:</span>
-            <span>90 000 ₽/смена</span>
-          </div>
-        </div>
-        
+        <h2 className="text-3xl font-bold mb-12 text-center">Выполненные проекты</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card 
