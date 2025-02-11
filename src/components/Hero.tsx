@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40 z-10" />
         <img
-          src="/forklift-hero.jpg"
+          src="https://taned.ru/wp-content/uploads/2014/04/forklift-130t.jpg"
           alt="Вилочный погрузчик Goodsense"
           className="w-full h-full object-cover object-center"
         />
